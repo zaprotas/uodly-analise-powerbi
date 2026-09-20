@@ -1,0 +1,20 @@
+relationship AutoDetected_32537f99-6fff-45b8-b465-dc42cf5a5779
+	fromColumn: fato_trecho.sessao_id
+	toColumn: dim_sessao.sessao_id
+
+relationship AutoDetected_5aa3d5b1-93bd-4b6d-8d0e-6e72f2e20794
+	fromColumn: fato_achado.sessao_id
+	toColumn: dim_sessao.sessao_id
+
+relationship AutoDetected_73b8db86-8bb2-4c37-9b87-166c105d0c60
+	fromColumn: fato_tarefa.sessao_id
+	toColumn: dim_sessao.sessao_id
+
+relationship AutoDetected_97f41252-811c-4d76-9d7e-de194abf4d32
+	fromColumn: fato_achado.tema
+	toColumn: dim_tema.tema
+
+relationship AutoDetected_c1088cc1-9e56-4ade-9f58-9c98dab4bfe9
+	fromColumn: fato_trecho.tipo
+	toColumn: dim_tipo_trecho.tipo
+

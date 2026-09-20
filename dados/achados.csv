@@ -1,0 +1,319 @@
+sessao_id,inicio_s,duracao_s,tema,severidade
+S19,2204,39,Confunde projeto com estudo,2
+S06,86,22,Não entende quais formatos são aceitos,3
+S24,3640,28,Não sabe onde a análise começa,4
+S15,1038,27,Não entende quais formatos são aceitos,3
+S22,1850,36,Não encontra o relatório depois de pronto,4
+S03,3083,28,Não sabe onde a análise começa,4
+S12,2997,36,Não sabe onde a análise começa,4
+S10,564,65,Upload falha sem dizer o motivo,4
+S17,375,23,Não entende quais formatos são aceitos,3
+S07,493,41,Upload falha sem dizer o motivo,4
+S06,489,42,Upload falha sem dizer o motivo,4
+S07,1378,38,Não sabe onde a análise começa,4
+S07,1864,24,Não sabe o que conta como acionável,3
+S20,1688,34,Não encontra o relatório depois de pronto,4
+S14,711,13,Acha que a integração já vem conectada,2
+S23,2504,10,Não sabe onde a análise começa,4
+S22,1397,112,Espera que a exportação seja automática,2
+S22,1690,28,Não encontra o relatório depois de pronto,4
+S21,1056,114,Perde o contexto ao voltar uma tela,3
+S15,2141,21,Não sabe onde a análise começa,4
+S24,1416,36,Não sabe onde a análise começa,4
+S12,2457,24,Não encontra o relatório depois de pronto,4
+S05,1170,21,Não reconhece o termo transcrição,1
+S21,840,37,Não sabe o que conta como acionável,3
+S07,806,29,Não sabe onde a análise começa,4
+S19,2455,50,Não entende quais formatos são aceitos,3
+S19,328,22,Não sabe onde a análise começa,4
+S02,1322,16,Não entende quais formatos são aceitos,3
+S19,3833,15,Não entende quais formatos são aceitos,3
+S23,0,55,Não sabe o que conta como acionável,3
+S13,2305,19,Não sabe onde a análise começa,4
+S03,547,61,Não entende quais formatos são aceitos,3
+S03,63,21,Espera que a exportação seja automática,2
+S11,2962,15,Não sabe como compartilhar o relatório,3
+S18,1686,12,Não entende a barra de progresso,2
+S12,2215,44,Não sabe onde a análise começa,4
+S07,2329,50,Upload falha sem dizer o motivo,4
+S16,1475,10,Upload falha sem dizer o motivo,4
+S03,1081,56,Espera que a exportação seja automática,2
+S03,1994,41,Não sabe como compartilhar o relatório,3
+S08,1857,48,Upload falha sem dizer o motivo,4
+S13,2811,43,Não encontra o relatório depois de pronto,4
+S12,0,33,Não entende quais formatos são aceitos,3
+S06,719,48,Upload falha sem dizer o motivo,4
+S21,877,30,Não sabe o que conta como acionável,3
+S02,1338,31,Perde o contexto ao voltar uma tela,3
+S11,1601,52,Não encontra o relatório depois de pronto,4
+S02,1129,21,Não entende quais formatos são aceitos,3
+S12,2011,62,Não sabe que dá para editar o achado,1
+S11,3369,39,Não sabe como compartilhar o relatório,3
+S14,2358,23,Não sabe onde a análise começa,4
+S02,2019,37,Perde o contexto ao voltar uma tela,3
+S21,2473,52,Perde o contexto ao voltar uma tela,3
+S04,3222,27,Não encontra o relatório depois de pronto,4
+S24,1481,28,Espera que a exportação seja automática,2
+S24,1666,30,Não sabe que dá para editar o achado,1
+S07,2837,11,Upload falha sem dizer o motivo,4
+S09,377,24,Não entende a barra de progresso,2
+S02,2522,29,Confunde projeto com estudo,2
+S10,1283,33,Upload falha sem dizer o motivo,4
+S10,669,119,Não encontra o relatório depois de pronto,4
+S19,2825,14,Não sabe onde a análise começa,4
+S13,1699,31,Confunde projeto com estudo,2
+S09,3531,23,Não sabe o que conta como acionável,3
+S20,2198,41,Não encontra o relatório depois de pronto,4
+S21,784,22,Não entende quais formatos são aceitos,3
+S05,35,11,Acha que a integração já vem conectada,2
+S11,1191,15,Não sabe como compartilhar o relatório,3
+S02,1868,28,Não encontra o relatório depois de pronto,4
+S21,2686,13,Perde o contexto ao voltar uma tela,3
+S02,877,94,Não encontra o relatório depois de pronto,4
+S03,940,119,Upload falha sem dizer o motivo,4
+S20,2641,19,Não entende quais formatos são aceitos,3
+S08,498,9,Espera que a exportação seja automática,2
+S12,2947,50,Não sabe onde a análise começa,4
+S09,1548,24,Não sabe onde a análise começa,4
+S15,2162,42,Upload falha sem dizer o motivo,4
+S24,1837,94,Não sabe que dá para editar o achado,1
+S01,3350,9,Espera que a exportação seja automática,2
+S05,103,29,Não sabe onde a análise começa,4
+S09,1929,27,Não sabe onde a análise começa,4
+S10,1848,19,Upload falha sem dizer o motivo,4
+S06,1136,47,Upload falha sem dizer o motivo,4
+S19,2674,13,Upload falha sem dizer o motivo,4
+S11,1127,19,Não sabe onde a análise começa,4
+S22,164,31,Não entende quais formatos são aceitos,3
+S09,890,15,Não entende a barra de progresso,2
+S09,289,16,Não sabe onde a análise começa,4
+S15,923,47,Upload falha sem dizer o motivo,4
+S04,2033,42,Não sabe onde a análise começa,4
+S07,82,12,Perde o contexto ao voltar uma tela,3
+S19,1862,16,Não sabe onde a análise começa,4
+S08,2830,38,Upload falha sem dizer o motivo,4
+S14,1158,80,Confunde projeto com estudo,2
+S24,2865,16,Não sabe o que conta como acionável,3
+S18,1741,15,Não sabe onde a análise começa,4
+S21,2631,44,Não entende a barra de progresso,2
+S12,905,23,Não sabe onde a análise começa,4
+S09,2447,12,Não sabe como compartilhar o relatório,3
+S14,1370,41,Não sabe onde a análise começa,4
+S19,2188,16,Upload falha sem dizer o motivo,4
+S17,2139,80,Procura um filtro que não existe,3
+S01,2983,33,Não sabe onde a análise começa,4
+S22,2302,28,Acha que a integração já vem conectada,2
+S01,2134,16,Confunde projeto com estudo,2
+S23,3031,35,Confunde projeto com estudo,2
+S09,305,44,Não sabe como compartilhar o relatório,3
+S20,1722,20,Não encontra o relatório depois de pronto,4
+S17,3039,40,Não entende a barra de progresso,2
+S03,237,38,Upload falha sem dizer o motivo,4
+S12,3033,23,Não entende a barra de progresso,2
+S17,1829,16,Confunde projeto com estudo,2
+S06,898,33,Não sabe onde a análise começa,4
+S12,1720,28,Não entende a barra de progresso,2
+S14,1968,21,Não sabe onde a análise começa,4
+S03,2128,12,Não sabe como compartilhar o relatório,3
+S21,1896,32,Perde o contexto ao voltar uma tela,3
+S24,1095,13,Espera que a exportação seja automática,2
+S24,1344,41,Não sabe onde a análise começa,4
+S11,1073,54,Não sabe o que conta como acionável,3
+S15,642,37,Procura um filtro que não existe,3
+S04,3060,8,Não sabe onde a análise começa,4
+S10,2182,50,Upload falha sem dizer o motivo,4
+S14,18,27,Espera que a exportação seja automática,2
+S07,337,41,Não entende quais formatos são aceitos,3
+S03,107,12,Upload falha sem dizer o motivo,4
+S08,310,16,Não encontra o relatório depois de pronto,4
+S18,857,38,Não encontra o relatório depois de pronto,4
+S11,2509,13,Não encontra o relatório depois de pronto,4
+S21,510,16,Upload falha sem dizer o motivo,4
+S17,213,60,Não entende quais formatos são aceitos,3
+S13,894,85,Não encontra o relatório depois de pronto,4
+S03,1280,10,Upload falha sem dizer o motivo,4
+S11,700,25,Não sabe o que conta como acionável,3
+S10,2567,18,Não entende quais formatos são aceitos,3
+S08,2671,47,Não entende quais formatos são aceitos,3
+S18,2703,42,Não sabe onde a análise começa,4
+S08,3108,23,Não encontra o relatório depois de pronto,4
+S21,1470,22,Não entende quais formatos são aceitos,3
+S15,2686,20,Não entende quais formatos são aceitos,3
+S11,389,88,Não sabe o que conta como acionável,3
+S03,3196,23,Não sabe onde a análise começa,4
+S08,368,56,Espera que a exportação seja automática,2
+S05,2608,19,Acha que a integração já vem conectada,2
+S04,3068,11,Acha que a integração já vem conectada,2
+S01,124,34,Confunde projeto com estudo,2
+S05,3177,34,Espera que a exportação seja automática,2
+S04,3495,20,Não sabe onde a análise começa,4
+S04,1636,42,Não entende a barra de progresso,2
+S19,2089,20,Acha que a integração já vem conectada,2
+S17,2651,21,Confunde projeto com estudo,2
+S14,2112,33,Espera que a exportação seja automática,2
+S01,3409,40,Não sabe onde a análise começa,4
+S06,1552,47,Upload falha sem dizer o motivo,4
+S08,2168,67,Não encontra o relatório depois de pronto,4
+S13,808,22,Não encontra o relatório depois de pronto,4
+S05,552,23,Acha que a integração já vem conectada,2
+S15,3554,55,Espera que a exportação seja automática,2
+S16,92,48,Upload falha sem dizer o motivo,4
+S23,2711,23,Confunde projeto com estudo,2
+S03,2260,22,Não sabe como compartilhar o relatório,3
+S15,18,21,Procura um filtro que não existe,3
+S15,1392,42,Espera que a exportação seja automática,2
+S09,37,57,Não encontra o relatório depois de pronto,4
+S21,2610,21,Não sabe o que conta como acionável,3
+S02,1076,25,Não encontra o relatório depois de pronto,4
+S24,1229,26,Não sabe onde a análise começa,4
+S08,1171,18,Não entende quais formatos são aceitos,3
+S20,0,35,Não sabe onde a análise começa,4
+S07,1416,21,Não encontra o relatório depois de pronto,4
+S16,1381,28,Não sabe o que conta como acionável,3
+S04,1678,33,Não sabe onde a análise começa,4
+S12,2838,35,Confunde projeto com estudo,2
+S14,45,48,Acha que a integração já vem conectada,2
+S20,909,33,Upload falha sem dizer o motivo,4
+S24,1622,16,Não sabe que dá para editar o achado,1
+S09,3691,45,Não sabe onde a análise começa,4
+S07,1437,14,Upload falha sem dizer o motivo,4
+S14,1254,22,Espera que a exportação seja automática,2
+S24,1587,35,Não sabe onde a análise começa,4
+S11,2986,37,Não sabe onde a análise começa,4
+S09,499,46,Não sabe como compartilhar o relatório,3
+S07,850,54,Não sabe onde a análise começa,4
+S03,608,40,Não sabe onde a análise começa,4
+S10,809,131,Upload falha sem dizer o motivo,4
+S08,1729,35,Upload falha sem dizer o motivo,4
+S12,1685,21,Não entende quais formatos são aceitos,3
+S18,2181,55,Não encontra o relatório depois de pronto,4
+S05,167,47,Não entende quais formatos são aceitos,3
+S21,2349,8,Upload falha sem dizer o motivo,4
+S11,818,19,Não sabe que dá para editar o achado,1
+S05,504,8,Acha que a integração já vem conectada,2
+S03,0,30,Upload falha sem dizer o motivo,4
+S01,2306,37,Upload falha sem dizer o motivo,4
+S24,1189,40,Não sabe o que conta como acionável,3
+S08,1147,24,Upload falha sem dizer o motivo,4
+S23,466,50,Confunde projeto com estudo,2
+S02,306,44,Não entende quais formatos são aceitos,3
+S23,1407,30,Upload falha sem dizer o motivo,4
+S08,1804,30,Espera que a exportação seja automática,2
+S05,2063,14,Espera que a exportação seja automática,2
+S15,108,42,Procura um filtro que não existe,3
+S15,1660,22,Procura um filtro que não existe,3
+S17,21,82,Procura um filtro que não existe,3
+S11,2174,32,Não entende quais formatos são aceitos,3
+S01,3143,14,Espera que a exportação seja automática,2
+S16,382,8,Não encontra o relatório depois de pronto,4
+S13,244,43,Upload falha sem dizer o motivo,4
+S14,902,19,Não sabe onde a análise começa,4
+S16,2172,37,Não entende quais formatos são aceitos,3
+S19,1398,18,Não sabe onde a análise começa,4
+S12,2651,30,Confunde projeto com estudo,2
+S09,1130,94,Confunde projeto com estudo,2
+S13,302,31,Não entende quais formatos são aceitos,3
+S06,216,15,Perde o contexto ao voltar uma tela,3
+S09,3051,28,Não entende a barra de progresso,2
+S19,773,20,Não entende quais formatos são aceitos,3
+S21,745,39,Não entende quais formatos são aceitos,3
+S22,2441,79,Não encontra o relatório depois de pronto,4
+S24,109,130,Não sabe o que conta como acionável,3
+S01,2150,16,Espera que a exportação seja automática,2
+S23,1732,24,Não sabe onde a análise começa,4
+S07,1648,163,Não encontra o relatório depois de pronto,4
+S17,1489,60,Não entende quais formatos são aceitos,3
+S19,3268,26,Não entende quais formatos são aceitos,3
+S04,1044,44,Acha que a integração já vem conectada,2
+S13,2011,13,Upload falha sem dizer o motivo,4
+S22,505,17,Não sabe onde a análise começa,4
+S23,813,24,Não reconhece o termo transcrição,1
+S10,364,40,Upload falha sem dizer o motivo,4
+S10,2082,19,Não entende quais formatos são aceitos,3
+S19,374,17,Upload falha sem dizer o motivo,4
+S11,1478,20,Não sabe o que conta como acionável,3
+S09,3613,35,Não sabe como compartilhar o relatório,3
+S08,1998,85,Upload falha sem dizer o motivo,4
+S13,1779,40,Não entende quais formatos são aceitos,3
+S16,1746,35,Não entende quais formatos são aceitos,3
+S16,242,45,Não sabe o que conta como acionável,3
+S08,2821,9,Não sabe onde a análise começa,4
+S15,2970,18,Perde o contexto ao voltar uma tela,3
+S09,2932,34,Não encontra o relatório depois de pronto,4
+S20,1085,43,Não sabe onde a análise começa,4
+S19,3546,11,Confunde projeto com estudo,2
+S07,556,29,Não encontra o relatório depois de pronto,4
+S06,1743,27,Upload falha sem dizer o motivo,4
+S13,1819,16,Upload falha sem dizer o motivo,4
+S23,1455,31,Upload falha sem dizer o motivo,4
+S19,3683,40,Confunde projeto com estudo,2
+S23,943,54,Não sabe onde a análise começa,4
+S04,2581,14,Não encontra o relatório depois de pronto,4
+S05,2344,63,Não entende quais formatos são aceitos,3
+S07,2515,21,Não encontra o relatório depois de pronto,4
+S21,2802,17,Upload falha sem dizer o motivo,4
+S02,2184,40,Não encontra o relatório depois de pronto,4
+S18,1498,60,Não encontra o relatório depois de pronto,4
+S16,1781,25,Não sabe o que conta como acionável,3
+S11,3202,88,Não entende quais formatos são aceitos,3
+S09,1766,58,Não encontra o relatório depois de pronto,4
+S05,1230,27,Não sabe onde a análise começa,4
+S01,240,21,Confunde projeto com estudo,2
+S13,1555,42,Não encontra o relatório depois de pronto,4
+S04,545,32,Não sabe onde a análise começa,4
+S14,1318,52,Acha que a integração já vem conectada,2
+S15,1282,46,Procura um filtro que não existe,3
+S16,1362,19,Upload falha sem dizer o motivo,4
+S23,542,21,Não sabe onde a análise começa,4
+S15,3473,28,Upload falha sem dizer o motivo,4
+S22,1236,30,Não sabe onde a análise começa,4
+S24,2089,70,Não sabe o que conta como acionável,3
+S19,3848,39,Não entende quais formatos são aceitos,3
+S09,1824,18,Não encontra o relatório depois de pronto,4
+S05,1191,39,Não sabe onde a análise começa,4
+S10,2329,30,Não sabe onde a análise começa,4
+S21,2148,49,Não entende quais formatos são aceitos,3
+S23,1801,57,Upload falha sem dizer o motivo,4
+S12,744,10,Não encontra o relatório depois de pronto,4
+S04,994,50,Não encontra o relatório depois de pronto,4
+S13,234,10,Não entende quais formatos são aceitos,3
+S17,1586,31,Upload falha sem dizer o motivo,4
+S05,2627,61,Acha que a integração já vem conectada,2
+S21,3014,34,Não sabe o que conta como acionável,3
+S14,749,42,Não sabe onde a análise começa,4
+S13,1056,31,Confunde projeto com estudo,2
+S12,2548,21,Não sabe que dá para editar o achado,1
+S20,430,45,Upload falha sem dizer o motivo,4
+S23,3066,38,Não sabe o que conta como acionável,3
+S13,1932,38,Não entende quais formatos são aceitos,3
+S05,1548,13,Não sabe onde a análise começa,4
+S12,403,40,Não encontra o relatório depois de pronto,4
+S17,1617,28,Procura um filtro que não existe,3
+S06,1999,25,Não sabe onde a análise começa,4
+S07,1051,28,Não encontra o relatório depois de pronto,4
+S15,279,14,Espera que a exportação seja automática,2
+S08,1325,77,Não sabe onde a análise começa,4
+S24,2291,60,Não sabe onde a análise começa,4
+S15,2487,17,Espera que a exportação seja automática,2
+S08,129,85,Não encontra o relatório depois de pronto,4
+S19,2714,50,Não sabe onde a análise começa,4
+S02,2348,75,Perde o contexto ao voltar uma tela,3
+S01,3196,107,Confunde projeto com estudo,2
+S21,2294,55,Upload falha sem dizer o motivo,4
+S15,1703,19,Upload falha sem dizer o motivo,4
+S17,2042,57,Procura um filtro que não existe,3
+S23,344,49,Confunde projeto com estudo,2
+S19,113,23,Upload falha sem dizer o motivo,4
+S10,200,21,Não encontra o relatório depois de pronto,4
+S03,1349,24,Não sabe como compartilhar o relatório,3
+S07,835,15,Não entende quais formatos são aceitos,3
+S19,864,39,Não sabe onde a análise começa,4
+S07,1920,30,Upload falha sem dizer o motivo,4
+S12,2259,31,Não entende quais formatos são aceitos,3
+S24,1164,25,Não sabe que dá para editar o achado,1
+S03,1411,42,Não sabe como compartilhar o relatório,3
+S22,3040,12,Não encontra o relatório depois de pronto,4
+S23,416,50,Não sabe o que conta como acionável,3
+S06,2230,14,Upload falha sem dizer o motivo,4
+S04,616,30,Não encontra o relatório depois de pronto,4
+S21,322,34,Perde o contexto ao voltar uma tela,3

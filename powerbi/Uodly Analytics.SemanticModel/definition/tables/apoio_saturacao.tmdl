@@ -1,0 +1,63 @@
+table apoio_saturacao
+	lineageTag: d767ae9c-c51a-43f0-87bc-6c0d6470c035
+
+	column sessoes_analisadas
+		dataType: int64
+		formatString: 0
+		lineageTag: a371534d-8a51-4505-a9e7-d7c2e23ebe4d
+		summarizeBy: sum
+		sourceColumn: sessoes_analisadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column temas_media
+		dataType: double
+		lineageTag: 6b83b753-71de-4cfc-b520-1ac2a5ee22fb
+		summarizeBy: sum
+		sourceColumn: temas_media
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column temas_p10
+		dataType: int64
+		formatString: 0
+		lineageTag: b371e382-3817-4663-b93c-1c47b495a259
+		summarizeBy: sum
+		sourceColumn: temas_p10
+
+		annotation SummarizationSetBy = Automatic
+
+	column temas_p90
+		dataType: int64
+		formatString: 0
+		lineageTag: 8be779b6-9cae-411f-ab17-4ad8023ba305
+		summarizeBy: sum
+		sourceColumn: temas_p90
+
+		annotation SummarizationSetBy = Automatic
+
+	column cobertura_pct
+		dataType: double
+		lineageTag: 3fbd3ff8-e075-4673-9edd-914ac55b63a1
+		summarizeBy: sum
+		sourceColumn: cobertura_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition apoio_saturacao = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents(PastaDados & "\uodly_powerbi.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "apoio_saturacao", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"sessoes_analisadas", Int64.Type}, {"temas_media", type number}, {"temas_p10", Int64.Type}, {"temas_p90", Int64.Type}, {"cobertura_pct", type number}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,93 @@
+table fato_achado
+	lineageTag: 6a4308b4-11cf-431e-a000-917fa0c5f80e
+
+	measure 'Achados codificados' = COUNTROWS ( fato_achado )
+		formatString: #,0
+		displayFolder: Achados
+
+	measure 'Temas distintos' = DISTINCTCOUNT ( fato_achado[tema] )
+		formatString: 0
+		displayFolder: Achados
+
+	measure 'Sessões com o tema' = DISTINCTCOUNT ( fato_achado[sessao_id] )
+		formatString: 0
+		displayFolder: Achados
+
+	measure '% das sessões com o tema' =
+			DIVIDE (
+			    [Sessões com o tema],
+			    CALCULATE ( DISTINCTCOUNT ( dim_sessao[sessao_id] ), ALL ( dim_sessao ) )
+			)
+		formatString: 0%
+		displayFolder: Achados
+
+	measure 'Gravidade máxima' = MAX ( fato_achado[severidade] )
+		formatString: 0
+		displayFolder: Achados
+
+	column sessao_id
+		dataType: string
+		lineageTag: e24374bf-36e3-4cac-bb27-0a444708aca7
+		summarizeBy: none
+		sourceColumn: sessao_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column inicio_s
+		dataType: int64
+		formatString: 0
+		lineageTag: 37a50190-c108-4006-bbaf-76935b4bd5f4
+		summarizeBy: sum
+		sourceColumn: inicio_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column duracao_s
+		dataType: int64
+		formatString: 0
+		lineageTag: 55eed16c-454b-465c-bbe8-8b31229093ec
+		summarizeBy: sum
+		sourceColumn: duracao_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column tema
+		dataType: string
+		lineageTag: 5e723212-b4db-4bc0-beb2-a30792060a96
+		summarizeBy: none
+		sourceColumn: tema
+
+		annotation SummarizationSetBy = Automatic
+
+	column severidade
+		dataType: int64
+		formatString: 0
+		lineageTag: e79134c0-3fff-4971-bece-6c3cab05783a
+		summarizeBy: sum
+		sourceColumn: severidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column duracao_min
+		dataType: double
+		lineageTag: 96992bfc-4423-456c-a985-14806687f3fd
+		summarizeBy: sum
+		sourceColumn: duracao_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fato_achado = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents(PastaDados & "\uodly_powerbi.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "fato_achado", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"sessao_id", type text}, {"inicio_s", Int64.Type}, {"duracao_s", Int64.Type}, {"tema", type text}, {"severidade", Int64.Type}, {"duracao_min", type number}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

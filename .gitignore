@@ -1,0 +1,6 @@
+# Power BI: cache de dados e preferências de máquina, regravados a cada abertura
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+__pycache__/
+.venv/

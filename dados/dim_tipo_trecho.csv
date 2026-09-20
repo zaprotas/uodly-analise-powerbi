@@ -1,0 +1,6 @@
+﻿tipo,tipo_rotulo,codificavel
+tentativa_tarefa,Tentativa de tarefa,True
+fala_moderador,Fala do moderador,False
+pensando_alto,Pensando alto,True
+silencio,Silêncio,False
+fora_do_tema,Fora do tema,False

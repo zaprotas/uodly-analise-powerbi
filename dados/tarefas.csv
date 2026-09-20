@@ -1,0 +1,121 @@
+sessao_id,tarefa,concluiu,tempo_s,relato_sucesso,relato_nota
+S01,Subir um vídeo de sessão,True,141,True,5
+S01,Encontrar os acionáveis do estudo,True,109,True,3
+S01,Filtrar achados por severidade,True,75,True,4
+S01,Exportar para o Power BI,True,109,True,5
+S01,Compartilhar o relatório com o time,True,112,True,4
+S02,Subir um vídeo de sessão,False,250,False,2
+S02,Encontrar os acionáveis do estudo,False,173,True,4
+S02,Filtrar achados por severidade,False,222,True,4
+S02,Exportar para o Power BI,True,103,True,5
+S02,Compartilhar o relatório com o time,True,109,True,3
+S03,Subir um vídeo de sessão,False,208,False,3
+S03,Encontrar os acionáveis do estudo,True,118,True,5
+S03,Filtrar achados por severidade,False,245,True,4
+S03,Exportar para o Power BI,False,156,True,4
+S03,Compartilhar o relatório com o time,True,113,True,5
+S04,Subir um vídeo de sessão,True,96,True,5
+S04,Encontrar os acionáveis do estudo,False,192,True,4
+S04,Filtrar achados por severidade,False,237,True,4
+S04,Exportar para o Power BI,False,220,True,3
+S04,Compartilhar o relatório com o time,False,247,True,3
+S05,Subir um vídeo de sessão,False,182,True,4
+S05,Encontrar os acionáveis do estudo,False,156,True,4
+S05,Filtrar achados por severidade,False,241,True,4
+S05,Exportar para o Power BI,True,106,True,3
+S05,Compartilhar o relatório com o time,True,161,True,3
+S06,Subir um vídeo de sessão,False,189,True,3
+S06,Encontrar os acionáveis do estudo,False,214,True,4
+S06,Filtrar achados por severidade,False,247,False,3
+S06,Exportar para o Power BI,True,116,True,4
+S06,Compartilhar o relatório com o time,False,147,True,5
+S07,Subir um vídeo de sessão,False,177,True,4
+S07,Encontrar os acionáveis do estudo,False,168,True,4
+S07,Filtrar achados por severidade,False,208,True,4
+S07,Exportar para o Power BI,True,111,True,4
+S07,Compartilhar o relatório com o time,True,155,True,4
+S08,Subir um vídeo de sessão,True,109,True,2
+S08,Encontrar os acionáveis do estudo,True,173,True,5
+S08,Filtrar achados por severidade,True,102,False,3
+S08,Exportar para o Power BI,False,202,True,3
+S08,Compartilhar o relatório com o time,False,137,False,1
+S09,Subir um vídeo de sessão,True,291,True,2
+S09,Encontrar os acionáveis do estudo,False,125,False,1
+S09,Filtrar achados por severidade,True,97,True,4
+S09,Exportar para o Power BI,False,180,False,3
+S09,Compartilhar o relatório com o time,True,171,True,3
+S10,Subir um vídeo de sessão,False,173,True,4
+S10,Encontrar os acionáveis do estudo,False,229,True,4
+S10,Filtrar achados por severidade,True,106,True,3
+S10,Exportar para o Power BI,False,164,False,1
+S10,Compartilhar o relatório com o time,True,161,True,4
+S11,Subir um vídeo de sessão,True,145,True,3
+S11,Encontrar os acionáveis do estudo,True,134,True,4
+S11,Filtrar achados por severidade,True,81,True,2
+S11,Exportar para o Power BI,False,245,True,5
+S11,Compartilhar o relatório com o time,True,95,True,4
+S12,Subir um vídeo de sessão,False,274,True,4
+S12,Encontrar os acionáveis do estudo,True,41,True,4
+S12,Filtrar achados por severidade,False,261,True,3
+S12,Exportar para o Power BI,True,194,True,2
+S12,Compartilhar o relatório com o time,True,108,True,3
+S13,Subir um vídeo de sessão,True,176,True,3
+S13,Encontrar os acionáveis do estudo,True,117,True,4
+S13,Filtrar achados por severidade,True,178,True,4
+S13,Exportar para o Power BI,True,213,True,4
+S13,Compartilhar o relatório com o time,True,88,True,5
+S14,Subir um vídeo de sessão,True,179,True,3
+S14,Encontrar os acionáveis do estudo,False,303,True,5
+S14,Filtrar achados por severidade,True,76,True,4
+S14,Exportar para o Power BI,True,224,True,4
+S14,Compartilhar o relatório com o time,True,137,True,5
+S15,Subir um vídeo de sessão,True,43,True,4
+S15,Encontrar os acionáveis do estudo,True,105,True,3
+S15,Filtrar achados por severidade,True,136,True,4
+S15,Exportar para o Power BI,False,270,True,5
+S15,Compartilhar o relatório com o time,True,97,True,3
+S16,Subir um vídeo de sessão,True,133,True,4
+S16,Encontrar os acionáveis do estudo,True,115,True,4
+S16,Filtrar achados por severidade,True,151,False,3
+S16,Exportar para o Power BI,True,97,True,4
+S16,Compartilhar o relatório com o time,False,138,True,4
+S17,Subir um vídeo de sessão,True,97,True,3
+S17,Encontrar os acionáveis do estudo,False,220,True,4
+S17,Filtrar achados por severidade,False,219,False,4
+S17,Exportar para o Power BI,False,211,True,5
+S17,Compartilhar o relatório com o time,False,152,True,3
+S18,Subir um vídeo de sessão,False,245,False,3
+S18,Encontrar os acionáveis do estudo,True,160,True,4
+S18,Filtrar achados por severidade,False,190,True,3
+S18,Exportar para o Power BI,True,216,False,3
+S18,Compartilhar o relatório com o time,True,172,True,5
+S19,Subir um vídeo de sessão,False,267,True,4
+S19,Encontrar os acionáveis do estudo,True,183,True,4
+S19,Filtrar achados por severidade,True,110,True,4
+S19,Exportar para o Power BI,True,38,True,5
+S19,Compartilhar o relatório com o time,False,190,True,3
+S20,Subir um vídeo de sessão,True,92,True,4
+S20,Encontrar os acionáveis do estudo,False,201,True,5
+S20,Filtrar achados por severidade,True,180,True,3
+S20,Exportar para o Power BI,True,113,False,1
+S20,Compartilhar o relatório com o time,True,170,True,4
+S21,Subir um vídeo de sessão,False,254,True,5
+S21,Encontrar os acionáveis do estudo,False,144,True,3
+S21,Filtrar achados por severidade,True,108,True,4
+S21,Exportar para o Power BI,True,174,True,3
+S21,Compartilhar o relatório com o time,True,105,True,3
+S22,Subir um vídeo de sessão,False,201,True,3
+S22,Encontrar os acionáveis do estudo,True,134,True,4
+S22,Filtrar achados por severidade,True,159,True,3
+S22,Exportar para o Power BI,False,237,False,2
+S22,Compartilhar o relatório com o time,True,188,True,3
+S23,Subir um vídeo de sessão,False,242,False,1
+S23,Encontrar os acionáveis do estudo,False,217,True,5
+S23,Filtrar achados por severidade,False,200,True,3
+S23,Exportar para o Power BI,False,191,True,5
+S23,Compartilhar o relatório com o time,False,171,False,4
+S24,Subir um vídeo de sessão,False,169,False,2
+S24,Encontrar os acionáveis do estudo,False,166,True,3
+S24,Filtrar achados por severidade,False,245,False,3
+S24,Exportar para o Power BI,False,251,True,3
+S24,Compartilhar o relatório com o time,False,168,True,4

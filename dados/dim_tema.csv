@@ -1,0 +1,15 @@
+﻿tema,severidade,gravidade
+Acha que a integração já vem conectada,2,2 · média
+Confunde projeto com estudo,2,2 · média
+Espera que a exportação seja automática,2,2 · média
+Não encontra o relatório depois de pronto,4,4 · crítica
+Não entende a barra de progresso,2,2 · média
+Não entende quais formatos são aceitos,3,3 · alta
+Não reconhece o termo transcrição,1,1 · baixa
+Não sabe como compartilhar o relatório,3,3 · alta
+Não sabe o que conta como acionável,3,3 · alta
+Não sabe onde a análise começa,4,4 · crítica
+Não sabe que dá para editar o achado,1,1 · baixa
+Perde o contexto ao voltar uma tela,3,3 · alta
+Procura um filtro que não existe,3,3 · alta
+Upload falha sem dizer o motivo,4,4 · crítica

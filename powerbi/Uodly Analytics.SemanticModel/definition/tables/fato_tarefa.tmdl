@@ -1,0 +1,197 @@
+table fato_tarefa
+	lineageTag: 51785053-407a-4729-904d-4e5c73aeac02
+
+	measure Tentativas = COUNTROWS ( fato_tarefa )
+		formatString: #,0
+		displayFolder: Tarefas
+
+	measure Concluíram = CALCULATE ( [Tentativas], fato_tarefa[concluiu] = TRUE () )
+		formatString: #,0
+		displayFolder: Tarefas
+
+	measure 'Relataram sucesso' = CALCULATE ( [Tentativas], fato_tarefa[relato_sucesso] = TRUE () )
+		formatString: #,0
+		displayFolder: Tarefas
+
+	measure 'Taxa de conclusão' = DIVIDE ( [Concluíram], [Tentativas] )
+		formatString: 0.0%
+		displayFolder: Tarefas
+
+	measure 'Taxa de relato de sucesso' = DIVIDE ( [Relataram sucesso], [Tentativas] )
+		formatString: 0.0%
+		displayFolder: Tarefas
+
+	measure 'Lacuna relato x execução' = [Taxa de relato de sucesso] - [Taxa de conclusão]
+		formatString: 0.0%
+		displayFolder: Tarefas
+
+	measure 'Relatos falso-positivos' = CALCULATE ( [Tentativas], fato_tarefa[relato_falso_positivo] = TRUE () )
+		formatString: #,0
+		displayFolder: Tarefas
+
+	/// Concordância observada: relatou sucesso tendo concluído, ou relatou
+	/// fracasso tendo falhado. É a diagonal principal da matriz 2x2.
+	measure 'Concordância observada' =
+			VAR Acordos =
+			    CALCULATE (
+			        [Tentativas],
+			        FILTER (
+			            fato_tarefa,
+			            fato_tarefa[relato_sucesso] = fato_tarefa[concluiu]
+			        )
+			    )
+			RETURN
+			    DIVIDE ( Acordos, [Tentativas] )
+		formatString: 0.000
+		displayFolder: Kappa
+
+	/// Concordância esperada por acaso, a partir das marginais da matriz.
+	measure 'Concordância por acaso' =
+			VAR Total = [Tentativas]
+			VAR RelatoSim = DIVIDE ( [Relataram sucesso], Total )
+			VAR FeitoSim = DIVIDE ( [Concluíram], Total )
+			RETURN
+			    RelatoSim * FeitoSim + ( 1 - RelatoSim ) * ( 1 - FeitoSim )
+		formatString: 0.000
+		displayFolder: Kappa
+
+	/// Kappa de Cohen: o quanto relato e observação concordam depois de
+	/// descontar a concordância que aconteceria por acaso.
+	measure 'Kappa de Cohen' =
+			VAR Po = [Concordância observada]
+			VAR Pe = [Concordância por acaso]
+			RETURN
+			    DIVIDE ( Po - Pe, 1 - Pe )
+		formatString: 0.000
+		displayFolder: Kappa
+
+	/// Célula da matriz: relatou sucesso e de fato concluiu.
+	measure 'Acertou o relato · concluiu' =
+			CALCULATE (
+			    [Tentativas],
+			    fato_tarefa[relato_sucesso] = TRUE (),
+			    fato_tarefa[concluiu] = TRUE ()
+			)
+		formatString: #,0
+		displayFolder: Matriz
+
+	/// Célula da matriz: disse que deu certo sem ter concluído.
+	measure 'Errou o relato · não concluiu' =
+			CALCULATE (
+			    [Tentativas],
+			    fato_tarefa[relato_sucesso] = TRUE (),
+			    fato_tarefa[concluiu] = FALSE ()
+			)
+		formatString: #,0
+		displayFolder: Matriz
+
+	/// Célula da matriz: disse que não deu certo mas concluiu.
+	measure 'Errou o relato · concluiu' =
+			CALCULATE (
+			    [Tentativas],
+			    fato_tarefa[relato_sucesso] = FALSE (),
+			    fato_tarefa[concluiu] = TRUE ()
+			)
+		formatString: #,0
+		displayFolder: Matriz
+
+	/// Célula da matriz: relatou fracasso e de fato não concluiu.
+	measure 'Acertou o relato · não concluiu' =
+			CALCULATE (
+			    [Tentativas],
+			    fato_tarefa[relato_sucesso] = FALSE (),
+			    fato_tarefa[concluiu] = FALSE ()
+			)
+		formatString: #,0
+		displayFolder: Matriz
+
+	column sessao_id
+		dataType: string
+		lineageTag: 95e13335-d869-430e-8a4b-64e03abdef44
+		summarizeBy: none
+		sourceColumn: sessao_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tarefa
+		dataType: string
+		lineageTag: f667a6f3-1bb5-4b29-ac9e-f7a1fc9dee5a
+		summarizeBy: none
+		sourceColumn: tarefa
+
+		annotation SummarizationSetBy = Automatic
+
+	column concluiu
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3450ce8e-a813-4cba-ac2c-24ea5dc6995f
+		summarizeBy: none
+		sourceColumn: concluiu
+
+		annotation SummarizationSetBy = Automatic
+
+	column tempo_s
+		dataType: int64
+		formatString: 0
+		lineageTag: c34ae974-85fd-4dd4-bbe1-10aa809d6bc4
+		summarizeBy: sum
+		sourceColumn: tempo_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column relato_sucesso
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2d2d181b-1609-4c44-93bd-03f56f2a9f4f
+		summarizeBy: none
+		sourceColumn: relato_sucesso
+
+		annotation SummarizationSetBy = Automatic
+
+	column relato_nota
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ceacff3-816e-4dc1-b652-7ebf508a3b55
+		summarizeBy: sum
+		sourceColumn: relato_nota
+
+		annotation SummarizationSetBy = Automatic
+
+	column relato_falso_positivo
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 06442b56-0ce0-4a2e-a0e5-a99c474fe0ed
+		summarizeBy: none
+		sourceColumn: relato_falso_positivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultado
+		dataType: string
+		lineageTag: 49a3780c-2d94-4091-a17b-18a255604be6
+		summarizeBy: none
+		sourceColumn: resultado
+
+		annotation SummarizationSetBy = Automatic
+
+	column relato
+		dataType: string
+		lineageTag: f6fe8430-18d6-4725-8199-efcf3386f3b4
+		summarizeBy: none
+		sourceColumn: relato
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_tarefa = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents(PastaDados & "\uodly_powerbi.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "fato_tarefa", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"sessao_id", type text}, {"tarefa", type text}, {"concluiu", type logical}, {"tempo_s", Int64.Type}, {"relato_sucesso", type logical}, {"relato_nota", Int64.Type}, {"relato_falso_positivo", type logical}, {"resultado", type text}, {"relato", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,7 @@
+expression PastaDados = "C:\caminho\para\uodly-analise-powerbi\dados" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: e96dc69e-b85d-48ff-a228-f7446d1c2b53
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

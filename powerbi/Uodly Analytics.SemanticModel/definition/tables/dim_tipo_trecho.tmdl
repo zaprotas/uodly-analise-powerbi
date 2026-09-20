@@ -1,0 +1,41 @@
+table dim_tipo_trecho
+	lineageTag: 55404dc7-ca63-427e-9e91-a0c91e71a024
+
+	column tipo
+		dataType: string
+		lineageTag: 5ed80d92-9215-409c-8175-0d40e5dfb6bc
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_rotulo
+		dataType: string
+		lineageTag: f751e5c1-46ba-4c58-9117-1795e273dd7e
+		summarizeBy: none
+		sourceColumn: tipo_rotulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column codificavel
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 41fe27ef-cd56-4d1c-ac60-8ad4caaaca23
+		summarizeBy: none
+		sourceColumn: codificavel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tipo_trecho = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents(PastaDados & "\uodly_powerbi.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "dim_tipo_trecho", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"tipo", type text}, {"tipo_rotulo", type text}, {"codificavel", type logical}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

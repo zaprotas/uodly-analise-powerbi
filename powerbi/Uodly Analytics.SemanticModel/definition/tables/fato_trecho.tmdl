@@ -1,0 +1,89 @@
+table fato_trecho
+	lineageTag: 15a5b0db-8b20-4a73-af33-6eaba77c7efb
+
+	measure 'Horas de material' = DIVIDE ( SUM ( fato_trecho[duracao_s] ), 3600 )
+		formatString: #,0.0
+		displayFolder: Material
+
+	measure 'Horas com achado' =
+			CALCULATE (
+			    [Horas de material],
+			    fato_trecho[gerou_achado] = TRUE ()
+			)
+		formatString: #,0.0
+		displayFolder: Material
+
+	measure '% do tempo com achado' = DIVIDE ( [Horas com achado], [Horas de material] )
+		formatString: 0.0%
+		displayFolder: Material
+
+	measure 'Trechos transcritos' = COUNTROWS ( fato_trecho )
+		formatString: #,0
+		displayFolder: Material
+
+	column sessao_id
+		dataType: string
+		lineageTag: 14be9338-c52c-4826-af89-2dfce668ba8a
+		summarizeBy: none
+		sourceColumn: sessao_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column inicio_s
+		dataType: int64
+		formatString: 0
+		lineageTag: 897735b0-70f2-4358-9137-b7292cc5f75b
+		summarizeBy: sum
+		sourceColumn: inicio_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column duracao_s
+		dataType: int64
+		formatString: 0
+		lineageTag: 1afae42a-ddf8-44eb-88b5-86f4d21f2b09
+		summarizeBy: sum
+		sourceColumn: duracao_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo
+		dataType: string
+		lineageTag: 3819dc2c-b910-4e16-beb9-bf9406d96d61
+		summarizeBy: none
+		sourceColumn: tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column gerou_achado
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 761667f9-96db-443f-8c4b-46aa600f1429
+		summarizeBy: none
+		sourceColumn: gerou_achado
+
+		annotation SummarizationSetBy = Automatic
+
+	column duracao_min
+		dataType: double
+		lineageTag: 41184721-a584-493c-937f-c823cd904ef7
+		summarizeBy: sum
+		sourceColumn: duracao_min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fato_trecho = m
+		mode: import
+		source =
+				let
+				  Origem = Excel.Workbook(File.Contents(PastaDados & "\uodly_powerbi.xlsx"), null, true),
+				  #"Navegação 1" = Origem{[Item = "fato_trecho", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"sessao_id", type text}, {"inicio_s", Int64.Type}, {"duracao_s", Int64.Type}, {"tipo", type text}, {"gerou_achado", type logical}, {"duracao_min", type number}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,27 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_sessao","dim_tema","dim_tipo_trecho","fato_trecho","fato_achado","fato_tarefa","apoio_saturacao"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_sessao
+ref table dim_tema
+ref table dim_tipo_trecho
+ref table fato_trecho
+ref table fato_achado
+ref table fato_tarefa
+ref table apoio_saturacao
+
+ref expression PastaDados
+
+ref cultureInfo pt-BR
+
