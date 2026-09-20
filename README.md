@@ -1,5 +1,9 @@
 # Análise de pesquisa de UX em Power BI · caso Uodly.app
 
+<p align="center">
+  <img src="imagens/00-painel.png" width="900" alt="Painel do estudo em Power BI">
+</p>
+
 > **Aviso sobre os dados.** O corpus deste repositório é **fictício**. O
 > Uodly.app é um produto em operação, e este estudo não o avalia: nenhum número
 > aqui mede acurácia, tempo economizado ou qualidade de saída da ferramenta. O
